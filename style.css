@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.todo-app h2 {
+    color: #153677;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    background: #ff5945;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e04836;
+}
+
+ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 12px;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    word-wrap: break-word;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul li span {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+    }
+}
